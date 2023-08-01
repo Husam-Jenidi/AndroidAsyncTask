@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/asyncBtn"
+        android:layout_width="264dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="19dp"
+        android:text="Start Async Task  "
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="53dp"
+        android:text="Local Task Status"
+        app:layout_constraintBottom_toTopOf="@+id/randomStr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/localBtn" />
+
+    <Button
+        android:id="@+id/localBtn"
+        android:layout_width="282dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="23dp"
+        android:text="Start Local Task"
+        app:layout_constraintBottom_toTopOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="131dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="53dp"
+        android:text="Async Task Status"
+        app:layout_constraintBottom_toTopOf="@+id/localBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asyncBtn" />
+
+    <Button
+        android:id="@+id/randomStr"
+        android:layout_width="270dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="24dp"
+        android:text="Generate Random String"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="109dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="150dp"
+        android:text="Random String"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomStr" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
